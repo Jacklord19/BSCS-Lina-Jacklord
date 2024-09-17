@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+.container {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+/* Sign up Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.form h2{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+}
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+#submit {
+    padding: 10px 20px;
+    width: 30%;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 10px;
+}
+#submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+/* Right Side*/
+.side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.side img {
+    width: 400px;
+    height: 500px;
+}
