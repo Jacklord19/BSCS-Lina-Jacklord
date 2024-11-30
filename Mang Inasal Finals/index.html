@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+          <div class="logo"><a href="#"><img src="d:\Mang Inasal Finals\LOGO"></a>
+           </div>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart-container">
+        <button id="cart-button" onclick="toggleCart()">View Cart</button>
+        <div id="cart" class="cart">
+            <div id="cart-message">Your cart is empty.</div>
+            <ul id="cart-list"></ul>
+            <div id="cart-summary">
+                <p>Total items: <span id="item-count">0</span></p>
+                <p id="cart-total">Total: ₱0.00</p>
+                <button onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+      </div>
+    <div class="menu-container">
+            <section class="menu-category solo">
+                <h2>Solo</h2>
+                <div class="item">
+                    <img src="d:\Mang Inasal Finals\Chicken Inasal" alt="Chicken Inasal">
+                    <h3>Chicken Inasal</h3>
+                    <p>Price: ₱169.00</p>
+                    <button onclick="addToCart('Solo Item 1')">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="d:\Mang Inasal Finals\Pork Barbeque" alt="Pork Barbeque">
+                    <h3>Barbeque</h3>
+                    <p>Price: ₱169.00</p>
+                    <button onclick="addToCart('Solo Item 2')">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="d:\Mang Inasal Finals\Bangus Sisig" alt="Bangus Sisig">
+                    <h3>Bangus Sisig</h3>
+                    <p>Price: ₱169.00</p>
+                    <button onclick="addToCart('Solo Item 3')">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="d:\Mang Inasal Finals\Pork Sisig" alt="Pork Sisig">
+                    <h3>Pork Sisig</h3>
+                    <p>Price: ₱169.00</p>
+                    <button onclick="addToCart('Solo Item 3')">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="d:\Mang Inasal Finals\Palabok" alt="Palabok">
+                    <h3>Palabok</h3>
+                    <p>Price: ₱169.00</p>
+                    <button onclick="addToCart('Solo Item 3')">Add to Cart</button>
+                </div>
+            </section>
+            
+         <section class="menu-category family-size">
+             <h2>Family Size</h2>
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Chicken Inasal Family Size" alt="Chicken Inasal Family Size">
+                <h3>Inasal Family Size</h3>
+                <p>Price: ₱542.00</p>
+                <button onclick="addToCart('Family Item 1')">Add to Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Pork Barbeque Family Size" alt="Pork Barbeque Family Size">
+                <h3>Barbeque Family Size</h3>
+                <p>Price: ₱537.00</p>
+                <button onclick="addToCart('Family Item 2')">Add to Cart</button>
+            </div>
+
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Bangus Sisig Family Size" alt="Bangus Sisig Family Size">
+                <h3>Bangus Sisig Family Size</h3>
+                <p>Price: ₱375.00</p>
+                <button onclick="addToCart('Family Item 3')">Add to Cart</button>
+            </div>
+            
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Pork Sisig Family Size" alt="Pork Sisig Family Size">
+                <h3>Pork Sisig</h3>
+                <p>Price: ₱336.00</p>
+                <button onclick="addToCart('Family Item 4')">Add to Cart</button>
+            </div>
+            
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Palabok Family Size" alt="Palabok Family Size">
+                <h3>Palabok Family Size</h3>
+                <p>Price: ₱450.00</p>
+                <button onclick="addToCart('Family Item 5')">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="menu-category dessert">
+            <h2>Dessert & Drinks</h2>
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Halo Halo" alt="Extra Creamy Halo-Halo">
+                <h3>Halo-Halo</h3>
+                <p>Price: ₱76.00</p>
+                <button onclick="addToCart('Dessert Item 1')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="d:\Mang Inasal Finals\Crema De Leche" alt="Crema De Leche Halo-Halo">
+                <h3>Crema De Leche</h3>
+                <p>Price: ₱76.00</p>
+                <button onclick="addToCart('Dessert Item 2')">Add to Cart</button>
+            </div> 
+            <div class="item">
+                    <img src="d:\Mang Inasal Finals\Red Gulaman" alt="Red Gulaman">
+                    <h3>Red Gulaman</h3>
+                    <p>Price: ₱44.00</p>
+                    <button onclick="addToCart('Drinks Item 1')">Add to Cart</button>
+            </div>
+            <div class="item">
+                    <img src="d:\Mang Inasal Finals\Iced Tea" alt="Iced Tea">
+                    <h3>Iced Tea</h3>
+                    <p>Price: ₱44.00</p>
+                    <button onclick="addToCart('Drinks Item 2')">Add to Cart</button>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="logo">
+            <div class="logo"><a href="#"><img src="d:\Mang Inasal Finals\Logo"></a>
+        </div>
+        <div class="links">
+          <div>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Allergens</a>
+          </div>
+        <br>
+          <div>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy Notice</a>
+          </div>
+        </div>
+        <div class="social">
+          <p>Connect with us!</p>
+          <a href="https://www.facebook.com/manginasalph" target="_blank"><img src="d:\Mang Inasal Finals\Facebook"></a>
+          <a href="https://www.youtube.com/@MangInasalPhilippines" target="_blank"><img src="d:\Mang Inasal Finals\Youtube"></a>
+          <a href="https://www.instagram.com/iammanginasal/"  target="_blank"><img src="d:\Mang Inasal Finals\Instagram"></a>
+        </div>
+        <div class="copyright">
+          <p>All Rights Reserved. Mang Inasal Philippines, Inc. 2023</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
