@@ -66,4 +66,11 @@ Departments → Courses (One-to-Many)
 Teachers → Courses (One-to-Many)
 Students → Enrollments (One-to-Many)
 Courses → Enrollments (One-to-Many)
+
+SAMPLE OUTPUT QUERY RESULTS:
 ![e6e0d78f-3f5e-4ac6-b199-61d6eca745c9](https://github.com/user-attachments/assets/768fbcc4-b729-470f-a05e-55776ee38176)
+![bf1cc791-b41e-4d03-aa43-3c02965af2d6](https://github.com/user-attachments/assets/0a3561a2-555e-4a5d-b578-afed9a5ff05c)
+![38ba12ca-bcd1-4ecf-9d4d-eddef9237280](https://github.com/user-attachments/assets/72f7b615-b8af-4740-901d-5b171c41b181)
+![7ca0f1f3-4dd4-496f-9fe4-781a043303b0](https://github.com/user-attachments/assets/eecdd228-4774-4be3-99db-7c15ee1b92da)
+
+
