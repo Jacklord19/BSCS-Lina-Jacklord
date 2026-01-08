@@ -1,11 +1,11 @@
 System Overview and Purpose
 The Simple Student Information System is a basic database designed to store and manage essential academic information in a school environment. The system keeps records of students, departments, teachers, courses, and student enrollments.
 Its main purpose is to:
-Organize student and academic data in a structured way
-Track which students are enrolled in which courses
-Identify which teachers handle specific courses
-Group courses and teachers by department
-Provide an easy way to retrieve, update, and manage student records
+ *Organize student and academic data in a structured way
+ *Track which students are enrolled in which courses
+ *Identify which teachers handle specific courses
+ *Group courses and teachers by department
+ *Provide an easy way to retrieve, update, and manage student records
 This system demonstrates proper database design using multiple related tables and supports basic operations such as viewing records, updating information, and deleting data.
 
 Table Descriptions and Relationships
