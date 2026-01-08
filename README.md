@@ -1,5 +1,6 @@
 System Overview and Purpose
 The Simple Student Information System is a basic database designed to store and manage essential academic information in a school environment. The system keeps records of students, departments, teachers, courses, and student enrollments.
+
 Its main purpose is to:
  *Organize student and academic data in a structured way
  *Track which students are enrolled in which courses
